@@ -1,4 +1,4 @@
-Judul Tugas: 
+Tugas: 
 Membuat Custom Gradle Task dan Mengelola Dependencies
 Deskripsi Tugas:
 Membuat proyek sederhana menggunakan Gradle dengan Groovy DSL dan Java. Proyek ini memiliki custom task bernama `greetingTask()` yang dapat menerima parameter Command Line Interface (CLI) menggunakan Gradle Project Property (`-Pname`).
