@@ -1,0 +1,29 @@
+
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:33.7.2-android'
+    testImplementation 'junit:junit:4.13.1'
+}
+
+test {
+    useJUnit()
+}
+
+
+tasks.register('greetingTask') {
+    doLast {
+        String name = providers.gradleProperty('name').getOrElse('Yahyayams')
+        println "Hello, ${name}! Welcome to Gradle World!"
+    }
+}
+
